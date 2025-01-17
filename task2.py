@@ -64,12 +64,13 @@ def game():
     
 
 title()
-game()
+
 for i in range(100000):
+    game()
     time.sleep(3)
     os.system('cls')
     play = input("Play again? Yes/No: ")
     if play == "Yes" or play == "yes":
-        game()
+        pass
     else:
         exit()
